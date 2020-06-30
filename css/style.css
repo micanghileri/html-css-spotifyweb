@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    position: relative;
+}
+
+/* stilizzazione menu sx */
+
+aside {
+    width: 250px;
+    height: 100vh;
+    background-color: black;
+}
+
+/* stilizzazione top menu */
+
+.top_menu {
+    width: calc(100vw - 250px);
+    height: 80px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* stilizzazione player */
+
+.player {
+    width: 100vw;
+    height: 80px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 40%;
+}
