@@ -22,14 +22,67 @@ aside {
     width: 250px;
     height: 100vh;
     background-color: #151400;
-    overflow: scroll;
     opacity: 98%;
+    position: relative;
+}
+
+.contenitore-aside {
+    width: 100%;
+    height: calc(100% - 100px);
+    overflow: scroll;
+    padding-bottom: 130px;
+}
+
+.account-connesso {
+    width: 210px;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    margin: 0 20px;
+}
+
+.account-connesso hr {
+    border: 0px;
+    height: 1px;
+    background-color: #b3b3b3;
+}
+
+.install {
+    color: #b3b3b3;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.install:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.user {
+    color: #ffffff;
+    font-size: 14px;
+    padding: 20px 0;
+    transition: color 0.4s ease-in-out 0s;
+}
+
+.user:hover {
+    color: #1ed760;
+    cursor: pointer;
+}
+
+.user i {
+    font-size: 25px;
+    padding-right: 10px;
 }
 
 .logo-area {
     width: 100%;
     height: 80px;
     position: relative;
+}
+
+.logo-area img:hover {
+    cursor: pointer;
 }
 
 .logo_img-big {
@@ -123,6 +176,7 @@ aside {
 }
 
 .playlist-create {
+    line-height: 25px;
     margin-bottom: 20px;
 }
 
@@ -364,6 +418,7 @@ main {
 
 .cuore-in-ascolto i:hover {
     color: red;
+    cursor: pointer;
 }
 
 .area-player-bar {
@@ -496,6 +551,10 @@ main {
         width: 60px;
     }
 
+    .account-connesso {
+        display: none;
+    }
+
     .text_aside-menu {
         display: none;
     }
@@ -526,6 +585,7 @@ main {
     /* stilizzazione main */
     main {
         width: calc(100vw - 60px);
+        padding-bottom: 130px;
     }
 
     .top-menu {
