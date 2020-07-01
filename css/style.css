@@ -57,7 +57,6 @@ aside {
 
 .aside-menu nav ul li p {
     display: inline-block;
-    text-transform: capitalize;
     font-size: 13px;
     font-weight: 600;
 }
@@ -77,12 +76,24 @@ aside {
     align-items: center;
 }
 
+.active {
+    color: #ffffff;
+}
+
 .green-hover {
+    background-color: #ffffff;
+    width: 4px;
+    height: 80%;
+    border-radius: 0 3px 3px 0;
+    opacity: 40%;
+    visibility: hidden;
+}
+
+.green-hover-active {
     background-color: #1ed760;
     width: 4px;
     height: 80%;
     border-radius: 0 3px 3px 0;
-    visibility: hidden;
 }
 
 .icon_aside-menu {
@@ -99,6 +110,30 @@ aside {
     align-items: center;
 }
 
+.aside-playlist-title {
+    color: #ffffff;
+    margin: 20px 0 10px 20px;
+    text-transform: uppercase;
+}
+
+.aside-playlist p:not(.aside-playlist-title) {
+    color: #b3b3b3;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.playlist-create {
+    margin-bottom: 20px;
+}
+
+.aside-playlist p:not(.aside-playlist-title):hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.aside-playlist section p {
+    margin: 5px 0;
+}
 
 /* stilizzazione main */
 
@@ -136,17 +171,31 @@ main {
 }
 
 .green-bottom {
+    background-color: #ffffff;
+    width: 40%;
+    height: 3px;
+    border-radius: 5px;
+    margin: 0 auto;
+    opacity: 40%;
+    visibility: hidden;
+}
+
+.green-bottom-active {
     background-color: #1ed760;
     width: 40%;
     height: 3px;
     border-radius: 5px;
     margin: 0 auto;
-    visibility: hidden;
 }
 
 .top-menu ul li:hover p{
     color: #ffffff;
     cursor: pointer;
+    opacity: 100%;
+}
+
+#active-p {
+    color: #ffffff;
     opacity: 100%;
 }
 
@@ -156,9 +205,9 @@ main {
 
 .music-area {
     height: 100%;
-    background: linear-gradient(to bottom right, #8c8003 0%, #090900 100%);
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(107,240,102,0.8547794117647058) 100%);
 }
-
 /* stilizzazione player */
 
 .player {
@@ -185,8 +234,7 @@ main {
     }
 
     .icon_aside-menu {
-        width: 100%;
-
+        width: 100%
     }
 
     .logo_img-big {
@@ -202,6 +250,10 @@ main {
     .logo_img-small {
         display: block;
         width: 35px;
+    }
+
+    .aside-playlist {
+        display: none;
     }
 
     /* stilizzazione main */
