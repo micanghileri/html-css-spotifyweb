@@ -157,6 +157,8 @@ main {
     flex-wrap: wrap;
     text-align: center;
     z-index: 10;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 59%, rgba(46,103,44,0) 100%, rgba(107,240,102,0.8547794117647058) 100%);
 }
 
 .top-menu ul li {
@@ -565,6 +567,6 @@ main {
 
 @media screen and (max-width: 1083px) {
     .card-music {
-        width: 25%;
+        width: 40%;
     }
 }
