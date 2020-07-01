@@ -437,7 +437,7 @@ main {
     margin-top: 10px;
 }
 
-.tasti-player-bar i {
+.tasti-player-bar i:not(.active-player) {
     color: #b3b3b3;
     padding: 0 22px;
     font-size: 15px;
@@ -447,7 +447,7 @@ main {
     font-size: 30px;
 }
 
-.tasti-player-bar i:hover {
+.tasti-player-bar i:hover:not(.active-player) {
     color: #ffffff;
     cursor: pointer;
 }
@@ -482,6 +482,28 @@ main {
     height: 100%;
     background-color: #ffffff;
     border-radius: 4px;
+}
+
+.active-player {
+    color: #1ed760;
+    position: relative;
+}
+
+.active-player:hover {
+    cursor: pointer;
+}
+
+.active-indicator {
+    position: absolute;
+    top: 21px;
+    left: -16px;
+    font-size: 4px !important;
+    color: #1ed760 !important;
+}
+
+.barra-attiva-car-player-bar:hover {
+    background-color: #1ed760;
+    cursor: pointer;
 }
 
 .pallina-avanzamento {
@@ -527,6 +549,11 @@ main {
     width: 50%;
     height: 100%;
     background-color: #ffffff;
+}
+
+.linea-volume-attiva:hover {
+    background-color: #1ed760;
+    cursor: pointer;
 }
 
 .pallina-volume {
