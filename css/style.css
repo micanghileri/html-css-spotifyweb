@@ -444,7 +444,7 @@ main {
 }
 
 .tasti-player-bar>.special-i {
-    font-size: 30px;
+    font-size: 30px !important;
 }
 
 .tasti-player-bar i:hover:not(.active-player) {
@@ -487,6 +487,7 @@ main {
 .active-player {
     color: #1ed760;
     position: relative;
+    padding: 0 22px;
 }
 
 .active-player:hover {
@@ -495,9 +496,9 @@ main {
 
 .active-indicator {
     position: absolute;
-    top: 21px;
-    left: -16px;
-    font-size: 4px !important;
+    top: 23px;
+    left: 6px;
+    font-size: 3px !important;
     color: #1ed760 !important;
 }
 
