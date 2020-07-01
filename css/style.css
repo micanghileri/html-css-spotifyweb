@@ -207,12 +207,62 @@ main {
     height: 100%;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(107,240,102,0.8547794117647058) 100%);
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.container-music {
+    width: 80%;
+}
+
+.first-container {
+    padding-top: 80px;
+}
+
+.container-music h3 {
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.music-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.card-music {
+    width: 17%;
+    margin: 0 10px 20px 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.card-music p {
+    opacity: 80%;
+}
+
+.card-img img {
+    width: 90%;
+    border-radius: 100px;
+    margin-bottom: 5px;
+}
+
+.card-img-square img {
+    width: 90%;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
 /* stilizzazione player */
 
 .player {
     width: 100vw;
-    height: 80px;
+    height: 100px;
     background-color: #282828;
     border-top: 1px solid #151400;
     position: absolute;
