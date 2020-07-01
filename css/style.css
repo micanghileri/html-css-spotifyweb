@@ -156,6 +156,7 @@ main {
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
+    z-index: 10;
 }
 
 .top-menu ul li {
@@ -366,7 +367,72 @@ main {
 .area-player-bar {
     flex-grow: 8;
     flex-shrink: 1;
-    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+
+.tasti-player-bar {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tasti-player-bar i {
+    color: #b3b3b3;
+    padding: 0 22px;
+    font-size: 15px;
+}
+
+.tasti-player-bar>.special-i {
+    font-size: 30px;
+}
+
+.tasti-player-bar i:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.caricamento-player-bar {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.caricamento-player-bar p {
+    font-size: 10px;
+    color: #b3b3b3;
+}
+
+.barra-car-player-bar {
+    height: 5px;
+    width: 70%;
+    background-color: #b3b3b3;
+    border-radius: 4px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.barra-attiva-car-player-bar {
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.pallina-avanzamento {
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    border: 1px solid grey;
+    border-radius: 100px;
 }
 
 .area-volume {
@@ -384,15 +450,26 @@ main {
     font-size: 13px;
 }
 
+.area-volume i:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
 .linea-volume {
-    width: 100px;
+    width: 80px;
     height: 3px;
     margin-left: 10px;
     background-color: #b3b3b3;
     border-radius: 2px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+}
+
+.linea-volume-attiva {
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
 }
 
 .pallina-volume {
@@ -401,6 +478,11 @@ main {
     background-color: #ffffff;
     border: 1px solid grey;
     border-radius: 100px;
+}
+
+.pallina-volume:hover,
+.pallina-avanzamento:hover {
+    cursor: pointer;
 }
 
 /* visualizzazione smartphone */
@@ -450,6 +532,32 @@ main {
 
     .card-music {
         width: 43%;
+    }
+
+    .player {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .img-in-ascolto img {
+        height: 60px;
+    }
+
+    .area-player-bar {
+        margin-bottom: 20px;
+    }
+
+    .caricamento-player-bar {
+        padding-top: 20px
+    }
+
+    .area-volume {
+        margin-top: 25px;
     }
 }
 
