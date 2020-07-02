@@ -379,6 +379,7 @@ main {
 
 .img-in-ascolto img {
     height: 100%;
+    width: 60px;
 }
 
 .titolo-in-ascolto {
